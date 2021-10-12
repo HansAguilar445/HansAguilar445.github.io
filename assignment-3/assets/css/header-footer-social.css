@@ -1,0 +1,128 @@
+@import "base.css";
+/* Header elements */
+
+header {
+    min-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+nav {
+    text-align: right;
+    height: 56px;
+  }
+  
+  nav ul {
+    list-style: none;
+    font-size: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+  }
+  
+  nav ul li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav ul li + li {
+    margin-left: 25px;
+  }
+
+/* Social Elements */
+
+.social {
+    min-width: 100%;
+    height: 56px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ 
+ .social ul li + li {
+    margin-left: 10px;
+ }
+ 
+ .social ul li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+ }
+ 
+ .social ul li a {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #505464;
+    border: 1px solid #d7d7db;
+    background-color: transparent;
+    border-radius: 5rem;
+ }
+ 
+ .social ul li a i {
+    font-size: 19px;
+ }
+ 
+ a, i {
+    transition: all .2s ease-in-out;
+ }
+ 
+ .social ul li a i.fa-twitter {
+    line-height: 40px;
+ }
+ 
+ .social ul li a i.fa-instagram,
+ .social ul li a i.fa-youtube {
+    line-height: 38px;
+ }
+ 
+ .social ul li a.twitter:hover {
+    border: 1px solid #1da1f2;
+    background-color: #1da1f2;
+ }
+ 
+ .social ul li a.instagram:hover {
+    border: 1px solid #e1306c;
+    background-color: #e1306c;
+ }
+ 
+ .social ul li a.youtube:hover {
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+ }
+ 
+ .social ul li a.twitter:hover i,
+ .social ul li a.instagram:hover i,
+ .social ul li a.youtube:hover i {
+    color: #fff;
+ }
+
+
+/* Footer Elements */
