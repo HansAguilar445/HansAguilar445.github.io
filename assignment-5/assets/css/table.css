@@ -1,0 +1,174 @@
+@import "base.css";
+main {
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 24px;    
+}
+
+table {
+    margin-top: 25px;
+    min-width: 100%;
+    border-collapse: collapse separate;
+    border-spacing: 0 10px;
+}
+
+tr {
+    min-width: 100%;
+    
+}
+
+tr + tr {
+    height: 5vh;
+}
+
+td {
+    margin: 100% 0;    
+    background-color: #fff;
+    box-shadow: 0 2px 0 #bbbbbb;
+    line-height: 5vh;
+}
+
+td:first-of-type {
+    border-radius: 10px 0 0 10px;
+}
+
+
+td:last-of-type {
+    border-radius: 0 10px 10px 0;
+}
+
+th {
+    color: #6e6e6e;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px; 
+    font-weight: 600;
+}
+
+i {
+    text-align: center;
+    font-size: 24px;
+    margin: 25%;
+}
+
+td p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.first {
+    width: 10%;
+}
+
+.first p {
+    text-align: center;
+}
+
+.second {
+    width: 25%;
+}
+
+.third {
+    width: 15%;
+}
+
+.fourth {
+    width: 15%;
+}
+
+.fifth {
+    width: 20%;
+}
+
+.sixth {
+    width: 15%;
+}
+
+td + td, th + th {
+    
+    padding: 10px 0;
+}
+
+td a {
+    padding: 10px 20px;
+    border-radius: 35px;
+    background-color: #dfdfdf;
+    color: #3f3f3f;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+td a:hover, td a:focus {
+    background-color: #9b9b9b;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Components: header                                   */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header {
+    min-width: 100%;
+    background-color: #007109;
+}
+  
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.title {
+    height: 56px;
+    width: 15%;
+}
+  
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 56px;
+    letter-spacing: .4px;
+    text-transform: capitalize;
+}
+  
+nav {
+    text-align: left;
+    height: 56px;
+    margin-left: 5%;
+    width: 30%;
+}
+  
+nav ul {
+    list-style: none;
+    font-size: 0;
+}
+  
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+  
+nav ul li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+  
+nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+nav ul li + li {
+    margin-left: 25px;
+}

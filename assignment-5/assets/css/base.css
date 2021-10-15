@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+}
+
+p, a, li, label, input, textarea, div, span, td {
+   font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+   letter-spacing: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+
+
+form {
+    margin: 7px auto 7px 30%;
+    width: 30%;
+    height: 75%;
+}
+
+form input {
+    background: rgba(61, 61, 61, 0.5) url(../img/search.png) no-repeat 95% center;
+    color: rgb(118, 118, 118);
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 28px;
+}
