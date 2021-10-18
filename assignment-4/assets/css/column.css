@@ -70,7 +70,7 @@ form {
 }
 
 form input {
-    background: rgb(61, 61, 61) url(../img/search.png) no-repeat 95% center;
+    background: rgba(0, 0, 0, .2) url(../img/search.png) no-repeat 95% center;
     color: rgb(118, 118, 118);
     height: 100%;
     width: 100%;
