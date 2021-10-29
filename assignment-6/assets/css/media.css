@@ -1,0 +1,445 @@
+@import "base.css";
+/* Header elements */
+
+header {
+    min-width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #930000;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.title {
+    width: 45%;
+}
+
+.title h1 {
+    line-height: 56px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: right;
+    height: 56px;
+    width: 55%;
+  }
+  
+  nav ul {
+    list-style: none;
+    font-size: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+  }
+  
+  nav ul li a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  nav ul li + li {
+    margin-left: 25px;
+  }
+
+/* Semantic containers */
+
+main {
+    background: #000 url(../img/tashascauldron.jpg) center center/cover no-repeat;    
+    height: 620px;
+    min-width: 100%;
+}
+
+article {
+    background: #e1e2e3 url("../img/d20.png") no-repeat 15% center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(14px);
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+.call-to-action a {
+    margin: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e1e2e3;
+    text-decoration: none;
+    background-color: #d94d3f;
+    border-radius: 20px;
+}
+
+
+
+article p {
+    margin: 8px;
+    font-size: 16px;
+}
+
+
+
+figure {
+    display: flex;
+    min-width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav {
+    overflow: hidden;
+}
+
+.mobile-nav p i {
+    line-height: 56px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Landing page image */
+
+.imagery {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagery h2, .imagery h3, .imagery hr {
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagery hr {
+    border: #930000 solid 1px;
+    width: 25%;
+    margin: 0 auto;
+    background-color: #930000;
+    padding: 1px;
+}
+
+.imagery h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Columns */
+
+section {
+    padding: 80px 0;
+    background-color: #f7f8f9;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    padding: 15px;
+}
+
+.column-content {
+    position: relative;
+    width: 100%;
+    padding: 24px 28px 29px 28px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 48px 0 rgba(59, 69,  152, 0.14);
+    display: flex;
+    flex-direction: column;
+}
+
+.content h4 {
+    font-size: 22px;
+    color: #303336;
+    font-weight: 700;
+}
+
+.content p {
+    margin-top: 9px;
+    font-size: 18px;
+    color: #303336;
+    font-weight: 500;
+}
+
+.button a {
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    margin-top: 34px;
+    line-height: 46px;
+    background-color: #d94d3f;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 2.5 ease-in-out;
+}
+
+/* Form section */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #edeeef;
+    padding: 15px;
+}
+
+.form {
+    padding: 15px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 20px 48px 0 rgba(59, 69,  152, 0.14);
+}
+
+.form h2 {
+    color: #303336;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    border: rgb(98, 98, 98) solid 1px;
+    padding: 15px;
+    margin: 5px 0;
+}
+
+form {
+    width: 90%;
+}
+
+input {
+    height: 50px;
+    border-radius: 4px;
+    padding: 0 15px;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    height: 160px;
+}
+
+input:focus, textarea:focus {
+    border: rgb(87, 181, 174) solid 1px;
+}
+
+input[type="reset"], input[type="submit"] {
+    padding: 0;
+    width: 25%;
+}
+
+input[type="reset"] {
+    background-color: #d94d3f;
+    color: #fff;
+    margin-right: 5px;
+}
+
+input[type="reset"]:hover {
+    background-color: #ff5242;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Social section */
+
+.social {
+    margin-top: 10px;
+    padding: 15px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 20px 48px 0 rgba(59, 69,  152, 0.14);
+}
+
+.social ul {
+    min-width: 100%;
+    height: 56px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style: none;   
+}
+
+.social ul li a {
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid rgb(100,100,100);
+    border-radius: 50%;
+
+ }
+a.twitter:hover {
+    border: 1px solid #1da1f2;
+    background-color: #1da1f2;
+ }
+
+a.youtube:hover {
+    border: 1px solid #ff0000;
+    background-color: #ff0000;
+ }
+ 
+a.instagram:hover {
+    border: 1px solid #e1306c;
+    background-color: #e1306c;
+ }
+a.twitch:hover {
+    border: 1px solid #ff00f2;
+    background-color: #ff00f2;
+}
+
+.social ul li a:hover {
+    color: #fff;
+}
+
+/* Media queries */
+
+/* For changing the site layout depending on certain devices or parameters*/
+
+@media screen and (min-width: 320px) {
+    nav { display: none;  }
+
+    .mobile-nav { display: block;}
+}
+
+@media screen and (min-width: 580px) {
+    nav { display: none;  }
+
+    .mobile-nav { display: block;}
+
+    .column-medium-6 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .form, .social {
+        flex: 0 0 49%;
+        width: 49%;
+    }
+
+    .social {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav { display: none;  }
+
+    .mobile-nav { display: block;}
+
+    .container, .row-container {
+        max-width: 800px;
+    }
+
+    .column-medium-6 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .form, .social {
+        flex: 0 0 49%;
+        width: 49%;
+    }
+
+    .social {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav { display: block;  }
+
+    
+    .mobile-nav { display: none;}
+    
+    .container, .row-container {
+        max-width: 1140px;
+    }
+    .column-large-3 {
+        flex: 0 0 25%;
+        width: 25%;
+    }
+
+    .form, .social {
+        flex: 0 0 49%;
+        width: 49%;
+    }
+
+    .social {
+        margin-top: 0;
+    }
+}
