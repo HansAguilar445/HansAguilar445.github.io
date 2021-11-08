@@ -1,0 +1,148 @@
+@import "base.css";
+
+/* - - - - - - - - - - - - - */
+/* Article page              */
+/* - - - - - - - - - - - - - */
+
+main {
+    width: 100%;
+    padding: 0 15px;
+    margin: 45px 0;
+}
+
+.article-page {
+    background-color: #fff;
+    padding: 60px;
+    border-radius: 4px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 20px 48px 0 rgba(59, 69,  152, 0.14);
+}
+
+.article-page h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.article-page h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.article-page p {
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.article-page div ul li {
+    margin-left: 30px;
+}
+
+#bibliography p {
+    margin-bottom: 5px; 
+}
+
+.article-page a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+span {
+    font-family: monospace;
+    color: #cc0000;
+    background-color: #efefef;
+}
+
+/* - - - - - - - - - - - - - - */
+/* Pictures                    */
+/* - - - - - - - - - - - - - - */
+
+#introduction figure {
+    float: right;
+    clear: both;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+#introduction figure img {
+    width: 245px;
+    height: 63px;
+}
+
+#tags-and-elements figure {
+    float: left;
+    clear: both;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 266px;
+    height: 146px;
+}
+
+#tags-and-elements figure img {
+    width: 243px;
+    height: 118px;
+}
+
+#rules figure {
+    float: left;
+    clear: both;
+    margin-right: 10px;
+}
+
+#rules figure img {
+    width: 322px;
+    height: 73px;
+}
+
+/* - - - - - - - - - - - - */
+/* Media queries           */
+/* - - - - - - - - - - - - */
+
+@media screen and (min-width: 320px) {
+    .article-page h2 { font-size: 20px; }
+    .article-page h3 { font-size: 16px; }
+    .article-page p { font-size: 12px;}
+    figure { display: none;}
+    .article-page { 
+        width: 95%;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .article-page h2 { font-size: 28px; }
+    .article-page h3 { font-size: 24px; }
+    .article-page p { font-size: 16px;}
+    figure { display: none;}
+    .article-page { 
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .article-page h2 { font-size: 30px; }
+    .article-page h3 { font-size: 24px; }
+    .article-page p { font-size: 16px;}
+    figure { display: block;}
+    .article-page { 
+        width: 85%;
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .article-page h2 { font-size: 30px; }
+    .article-page h3 { font-size: 24px; }
+    .article-page p { font-size: 16px;}
+    figure { display: block;}
+    .article-page { 
+        width: 80%;
+        padding: 60px;
+    }
+}
