@@ -61,43 +61,20 @@ span {
 /* Pictures                    */
 /* - - - - - - - - - - - - - - */
 
-#introduction figure {
-    float: right;
-    clear: both;
+img {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
 }
 
-figcaption {
-    font-size: 12px;
+.rotate-y {
+    animation: rotate-y 4s linear infinite;
 }
 
-#introduction figure img {
-    width: 245px;
-    height: 63px;
-}
-
-#tags-and-elements figure {
-    float: left;
-    clear: both;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    width: 266px;
-    height: 146px;
-}
-
-#tags-and-elements figure img {
-    width: 243px;
-    height: 118px;
-}
-
-#rules figure {
-    float: left;
-    clear: both;
-    margin-right: 10px;
-}
-
-#rules figure img {
-    width: 322px;
-    height: 73px;
+@keyframes rotate-y {
+    0% { transform: rotateY(0deg);}
+    50% { transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
 }
 
 /* - - - - - - - - - - - - */

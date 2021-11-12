@@ -1,7 +1,7 @@
 @import "base.css";
 
 main {
-    padding: 65px 0;
+    height: calc(100vh - 56px);
 }
 
 .container, .row-container {
