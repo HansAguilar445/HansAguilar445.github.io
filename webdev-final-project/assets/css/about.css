@@ -89,7 +89,6 @@ img {
     .about-page h2 { font-size: 20px; }
     .about-page h3 { font-size: 16px; }
     .about-page p { font-size: 12px;}
-    figure { display: none;}
     .about-page { 
         width: 95%;
         padding: 30px;
@@ -100,7 +99,6 @@ img {
     .about-page h2 { font-size: 28px; }
     .about-page h3 { font-size: 24px; }
     .about-page p { font-size: 16px;}
-    figure { display: none;}
     .about-page { 
         width: 90%;
         padding: 40px;
@@ -111,7 +109,6 @@ img {
     .about-page h2 { font-size: 30px; }
     .about-page h3 { font-size: 24px; }
     .about-page p { font-size: 16px;}
-    figure { display: block;}
     .about-page { 
         width: 85%;
         padding: 50px;
@@ -121,7 +118,6 @@ img {
     .about-page h2 { font-size: 30px; }
     .about-page h3 { font-size: 24px; }
     .about-page p { font-size: 16px;}
-    figure { display: block;}
     .about-page { 
         width: 80%;
         padding: 60px;
