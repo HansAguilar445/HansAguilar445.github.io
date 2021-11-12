@@ -31,6 +31,10 @@ main {
     font-weight: 600;
 }
 
+.about-page h3:last-of-type {
+    margin-top: 30px;
+}
+
 .about-page p {
     margin: 15px 0;
     font-size: 16px;
