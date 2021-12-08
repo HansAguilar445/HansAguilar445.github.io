@@ -27,6 +27,7 @@ main {
 
 .article-page h3 {
     margin: 10px 0;
+    padding-top: 10px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -38,8 +39,11 @@ main {
     line-height: 1.8;
 }
 
-.article-page div ul li {
+.article-page div ul li, .article-page div ol li {
     margin-left: 30px;
+}
+.article-page div ul li p, .article-page div ol li p {
+    margin: 0;
 }
 
 #bibliography p {
@@ -49,14 +53,20 @@ main {
 .article-page a {
     color: #0000ff;
     text-decoration: none;
+}
+.bibliography a {
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
-span {
+code {
     font-family: monospace;
     color: #cc0000;
     background-color: #efefef;
+}
+
+#assembly {
+    padding-bottom: 60px;
 }
 
 /* - - - - - - - - - - - - - - */
@@ -100,6 +110,37 @@ figcaption {
 #rules figure img {
     width: 322px;
     height: 73px;
+}
+
+#references figure {
+    float: right;
+    clear: both;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#references figure img {
+    height: 304px; 
+    width: 210px;
+}
+
+#part-creation figure, #assembly figure {
+    float: right;
+    clear: both;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#part-creation figure img, #assembly figure img {
+    height: 252px; 
+    width: 189px;
 }
 
 /* - - - - - - - - - - - - */
