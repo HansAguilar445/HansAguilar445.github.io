@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata, favicon and title -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hans Aguilar">
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <title>C#</title>
+        <!-- Google Font: Oxygen -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <!-- Font Awesome and general CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/article.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <div class="container">
+                <div class="title">
+                    <h1>Hans Aguilar</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav">
+                    <p><i class="fas fa-bars" title="Menu"></i></p>
+                </div>
+            </div>
+        </header>
+        <!-- Article -->
+        <!-- The IDs are for if I want to add a table of contents in the future -->
+        <main>
+            <div class="container">
+                <div class="article-page">
+                    <h2>The Basics of C#</h2>
+                    <div id="introduction">
+                        <!-- Introduction to C# -->
+                        <p>
+                            <b>C#</b> is an object-oriented programming language developed by Microsoft using their .NET framework. 
+                            It is very similar to the Java programming language, having been initially designed as such to conform 
+                            to ECMA’s standards. Applications that are programmed in C# include: 
+                        </p>
+                        <ul>
+                            <li><p>Games built in the Unity Engine</p></li>
+                            <li><p>The Nintendo Switch emulator called Ryujinx</p></li>
+                            <li><p>Paint.NET</p></li>
+                        </ul>
+                        <p>
+                            C# was first released in 2002 with the .NET Framework’s 1.0 release. Its most recent version is 
+                            C# 10.0, released in November of 2021 alongside .NET 6.0.
+                        </p>
+                        <!-- Picture 1 - Not visible at a certain size because I didn't want to keep resizing it -->
+                    </div>
+                    <h3>Setting up</h3>
+                    <div id="setting-up">
+                        <!-- Conditions to continue -->
+                        <p>
+                            Before you start programming, please ensure the following conditions have been fulfilled: 
+                        </p>
+                        <!-- Important tag list -->
+                        <ul>
+                            <li>
+                                <p>
+                                    Your IDE must be compatible with .cs files
+                                    
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    .NET must be installed and up to date
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            Once these conditions have been fulfilled, you can start by creating a file. For the purpose of 
+                            this guide, you should use Visual Studio as the IDE as it does not require much setup. The file 
+                            type for C# code is .cs, though Visual Studio also adds .sln files to contain the project.
+                        </p>
+                    </div>
+                    <h3>Basic rules of programming</h3>
+                    <div id="attributes">
+                        <p>
+                            Now that you have a file to write a program in, there are specific conventions that you must remember 
+                            when writing code in C#. These are shared with most other programming languages, so keep the following 
+                            rules in mind when following this beginner’s guide:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Always end lines of code with semicolons (<span>;</span>). This tells the computer to go to the next line when 
+                                    you run the code, so forgetting one can break the entire program.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Remember that code is case-sensitive. Not capitalizing one method that you want to use when it needs a capital 
+                                    letter is another mistake that causes errors and breaks the program.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Name your variables something that makes sense for what they do. It helps you figure out what purpose every variable 
+                                    fulfills if something goes wrong after running the program.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Indent your code. Code that is misaligned is hard to read.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Put comments in your code. This helps you define what role each chunk of code serves in the overall program. 
+                                    Use <span>//</span> for comments that use one line or <span>/*</span> and <span>*/</span> to define where a 
+                                    multi-line comment starts and ends.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Console outputs</h3>
+                    <div id="console-outputs">
+                        <p>
+                            To start out simply, you will write some sentences in the terminal. It is the traditional starting point for any beginner 
+                            in a programming language, the classic "Hello World" message. The template for a console application always starts with 
+                            the message, but you might not understand how it all works. To explain, the message is sent to the terminal using either 
+                            the method called <span>WriteLine()</span> or a similar method called <span>Write()</span>, which are methods connected to the Console object 
+                            (<span>Console.</span>). You put data in the brackets, like Boolean (true or false) statements, equations, and strings of text, and 
+                            it outputs the results. Some examples include:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span>Console.WriteLine("Hello World");</span> results in the words “Hello World” (quotation marks not included) being outputted from the console.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>Console.WriteLine(1 > 0);</span> results in a value of True being outputted to the console.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>Console.WriteLine(2 * 6);</span> results in a value of 12 being outputted to the console.
+                                </p>
+                            </li>
+                        </ul>
+                        <p>
+                            With this in mind, experiment to see what results you get from the terminal as practice before moving on.
+                        </p>
+                    </div>
+                    <h3>Variables</h3>
+                    <div id="variables">
+                        <p>
+                            The natural next step after finding out how to output information to the terminal is to define variables in the code. 
+                            As the name implies, these are placeholders that you define to substitute for actual data. There are seven main data 
+                            types that variables can be defined as, which the following table will detail:
+                        </p>
+                        <div class="table">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Example</th>
+                                </tr>
+                                <tr>
+                                    <td><p><span>int</span></p></td>
+                                    <td><p>11037</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>long</span></p></td>
+                                    <td><p>-9223372036854775808</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>string</span></p></td>
+                                    <td><p>"Hello World"</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>float</span></p></td>
+                                    <td><p>6.02f</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>double</span></p></td>
+                                    <td><p>3.141592653589793238462643</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>char</span></p></td>
+                                    <td><p>'b'</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p><span>bool</span></p></td>
+                                    <td><p>true</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>
+                            In order to use variables, you need to declare them using the data type’s name and define 
+                            them with a value. These are formatted as <span>datatype variableName = value;</span>. From there, you 
+                            can use them as you need by using the name to stand in for the value in the code you are writing. 
+                        </p>
+                        <h4>Changing declared variables</h4>
+                        <p>
+                            Another important concept to keep in mind with variables is that you can change them later in the program. 
+                            This is used in several ways, like iterating through loops and accepting user input. You can change the 
+                            value of your variables by: 
+                        </p>
+                        <ul>
+                            <li><p>Defining a new value. Example: <span>x = 5;</span></p></li>
+                        </ul>
+                    </div>
+                    <!-- Bibliography -->
+                    <h3>Works Cited</h3>
+                    <div id="bibliography">
+                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em> <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">Link</a></p>
+                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">Link</a></p>
+                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em> <a href="https://www.w3schools.com/Css/css_syntax.asp">Link</a></p>
+                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> <a href="https://www.w3schools.com/tags/tag_doctype.asp">Link</a></p>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2021 Hans Aguilar</p>
+            </div>
+        </footer>
+    </body>
+</html>
