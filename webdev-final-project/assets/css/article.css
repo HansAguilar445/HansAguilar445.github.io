@@ -61,7 +61,8 @@ main {
     color: #0000ff;
     text-decoration: none;
 }
-.bibliography a {
+
+#bibliography a {
     margin-bottom: 5px;
     margin-left: 25px;
 }

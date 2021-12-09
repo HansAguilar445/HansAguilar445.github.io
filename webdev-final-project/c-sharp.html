@@ -125,7 +125,7 @@
                             </li>
                         </ul>
                     </div>
-                    <h3>Console outputs</h3>
+                    <h3>Console inputs and outputs</h3>
                     <div id="console-outputs">
                         <p>
                             To start out simply, you will write some sentences in the <b>terminal</b>. It is the traditional starting point for any beginner 
@@ -219,6 +219,24 @@
                             </ul>
                             <p>
                                 Be careful not to change the variables in ways that they cannot accept, such as adding a <code>string</code> to an int, as that can cause errors.
+                            </p>
+                        </div>
+                        <h4>User input</h4>
+                        <div id="user">
+                            <p>
+                                Now that you know how to use variables in your code, one more option opens up in the terminal: user input. Using another Console method
+                                called ReadLine(), you can use a string to record what the user wrote in the previous line of the terminal. The following code block
+                                demonstrates ReadLine() in use to record a message:
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>string message = Console.ReadLine();</p>
+                                    <p>Console.WriteLine(message);</p>
+                                </code>
+                            </div>
+                            <p>
+                                ReadLine() returns a string value, so if you want to use numerical values, you will need to convert the string to the data type you want
+                                the appropriate data type for the job.
                             </p>
                         </div>
                     </div>
@@ -390,18 +408,114 @@
                             code</b>. Loops allow you to reduce the number of lines you need to write by repeating specific lines that you place inside a loop. There are 
                             three main kinds of loops that you normally use in C#.
                         </p>
+                        <h4>While loops</h4>
+                        <div id="while">
+                            <p>
+                                The first and easiest to understand type of loop is the "while" type of loop. The syntax is similar to an "if-else" statement, with the only 
+                                difference being that while replaces if. Code within a while loop repeats as long as the conditions you put in the brackets are being 
+                                fulfilled. However, if the conditions are never met, the loop never runs. The following example code demonstrates a while loop being used 
+                                to count every time a number is even:
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>//Counts the number of even numbers in the loop</p>
+                                    <p>int loop = 0;</p>
+                                    <p>int even = 0;</p>
+                                    <p>while (loop &lt; 7)</p>
+                                    <p>{</p>
+                                    <p class="indent-1">loop++;</p>
+                                    <p class="indent-1">Console.WriteLine("Loop number " + loop);</p>
+                                    <p class="indent-1">if (loop % 2 == 0)</p>
+                                    <p class="indent-1">{</p>
+                                    <p class="indent-2">evens++;</p>
+                                    <p class="indent-1">}</p>
+                                    <p class="indent-1">Console.WriteLine("Even numbers: " + evens);</p>
+                                    <p>}</p>
+                                </code>
+                            </div>
+                        </div>
+                        <h4>Do-while loops</h4>
+                        <div id="do-while">
+                            <p>
+                                A "do-while" loop is similar to a "while" loop in that it performs the same function, but the way you use it is different. The syntax of a 
+                                "do-while" loop puts the looping condition at the end of the code. This means that the loop will trigger at least once, even if the looping 
+                                conditions are never met. The following example code uses a "do-while" loop to ask for a password:
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>string pass = "";</p>
+                                    <p>do</p>
+                                    <p>{</p>
+                                    <p class="indent-1">Console.WriteLine("Please enter your password.");</p>
+                                    <p class="indent-1">pass = Console.ReadLine();</p>
+                                    <p class="indent-1">if (pass == "password123")</p>
+                                    <p class="indent-1">{</p>
+                                    <p class="indent-2">Console.WriteLine("Password is valid. Exiting program.");</p>
+                                    <p class="indent-1">} else</p>
+                                    <p class="indent-1">{</p>
+                                    <p class="indent-2">Console.WriteLine("Invalid password.");</p>
+                                    <p class="indent-1">}</p>
+                                    <p>} while(pass != "password123");</p>
+                                </code>
+                            </div>
+                            <p>Unlike other loops, this one requires a semicolon at its end.</p>
+                        </div>
+                        <h4>For loops</h4>
+                        <div id="for">
+                            <p>
+                                The third and most important type of loop is the "for" type of loop. "For" loops differ from the other two kinds of loops because unlike the 
+                                others, you can set the number of times it loops without creating a variable beforehand. You do this by setting a local variable inside the 
+                                loop, usually an <code>int</code> named <code>i</code> (for iteration), and setting the condition to something you want it to avoid reaching 
+                                until a certain time. The local variable can be used inside the loop for things like adding to another variable or cycling through an array, 
+                                but cannot be used outside the loop unless you declare it again outside of the loop. The following example code outputs the value of <code>i</code>> 
+                                into the console 10 times:
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>for (int i = 0; i &lt; 10; i++)</p>
+                                    <p>{</p>
+                                    <p class="indent-1">Console.WriteLine(i);</p>
+                                    <p>}</p>
+                                </code>
+                            </div>
+                        </div>
                     </div>
+                    <h3>Further learning</h3>
+                    <p>
+                        If you intend to learn more about C# and how you can use it, there are several platforms to continue learning from.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://unity.com/" target="_blank">Unity Engine</a>: The Unity Engine uses C# scripts to control how parts of your
+                                game will work.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://dotnet.microsoft.com/learn/csharp" target="_blank">Microsoft’s .NET learning</a> and 
+                                <a href="https://docs.microsoft.com/en-ca/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website" target="_blank">
+                                documentation sites</a>: Microsoft has several sites for developers to learn how to use anything that relies on .NET, C# included.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://www.w3schools.com/cs/index.php" target="_blank">W3Schools</a>: W3Schools provides a course for C# that you can 
+                                use for practice.
+                            </p>
+                        </li>
+                    </ul>
                     <!-- Bibliography -->
                     <h3>Works Cited</h3>
                     <div id="bibliography">
-                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em></p>
-                        <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">https://www.w3schools.com/htmL/html_blocks.asp</a>
-                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> </p>
-                        <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">https://www.w3schools.com/htmL/html_attributes.asp</a>
-                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em></p>
-                        <a href="https://www.w3schools.com/Css/css_syntax.asp">https://www.w3schools.com/Css/css_syntax.asp</a>
-                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> </p>
-                        <a href="https://www.w3schools.com/tags/tag_doctype.asp">https://www.w3schools.com/tags/tag_doctype.asp</a>
+                        <p>Microsoft. (2021, November 20). <em>The history of C#.</em></p>
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history" target="_blank">
+                            https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history
+                        </a>
+                        <p>W3Schools. (n.d.). <em>C# Data Types.</em> </p>
+                        <a href="https://www.w3schools.com/cs/cs_data_types.php" target="_blank">https://www.w3schools.com/cs/cs_data_types.php</a>
+                        <p>W3Schools. (n.d.). <em>C# User Input.</em></p>
+                        <a href="https://www.w3schools.com/cs/cs_user_input.php" target="_blank">https://www.w3schools.com/cs/cs_user_input.php</a>
                     </div>
                 </div>
             </div>    
