@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
         <!-- Font Awesome and general CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/article.css">
+        <link rel="stylesheet" href="assets/css/blog.css">
     </head>
     <body>
         <!-- Navbar -->
@@ -36,110 +36,70 @@
             </div>
         </header>
         <!-- Article -->
-        <!-- The IDs are for if I want to add a table of contents in the future -->
         <main>
             <div class="container">
-                <div class="article-page">
-                    <h2>HTML and CSS</h2>
-                    <div id="introduction">
-                        <!-- Introduction to HTML and CSS -->
-                        <p>
-                            <b>Hypertext Markup Language (HTML)</b> is a markup language that web developers build websites 
-                            with. Consisting of several elements and tags to structure the page, these elements remain 
-                            within either the head or body of the page. <b>Cascading Style Sheets (CSS)</b> are files made in 
-                            the language of the same name that websites used to decorate and change the structure of 
-                            the site.
-                        </p>
-                        <!-- Picture 1 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/html.png">
-                            <figcaption>Figure 1: An HTML document in an editor.</figcaption>
-                        </figure>
+                <h2>Articles</h2>
+                    <div class="row-container row">
                         
+                        <!-- <div class="column column-medium-6 column-small-3">
+                            <div class="column-content">
+                                <figure>
+                                    <img href="">
+                                </figure>
+                                <div class="content">
+                                    <h4>SSL</h4>
+                                        <p>
+                                        Secure Socket Layer (SSL) is an Internet protocol developed to ensure 
+                                        user privacy, authentication, and the integrity of any data transmitted in 
+                                        any communications across the internet... (continued)
+                                    </p>
+                                    <div class="button">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+
+                        <div class="column column-medium-6 column-small-3">
+                            <figure>
+                                <img src="assets/img/css.png">
+                            </figure>
+                            <div class="column-content">    
+                                <div class="content">
+                                    <h4>HTML and CSS</h4>
+                                    <p>
+                                        Hypertext Markup Language (HTML) is a markup language that web developers 
+                                        build websites with. Consisting of several elements and tags to structure the 
+                                        page, these elements... (continued) 
+                                    </p>
+                                    <div class="button">
+                                        <a href="articles.html">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Tags and Elements</h3>
-                    <div id="tags-and-elements">
-                        <!-- Intro to tags and elements -->
-                        <p>
-                            HTML consists of various <b>tags</b> designed to become a structured page when viewed in a browser.
-                            These tags serve different functions depending on where they are placed in a site. The 
-                            following list details specific tags that developers must use for a functional website. 
-                            HTML consists of various tags designed to become a structured page when viewed in a browser. 
-                        </p>
-                        <!-- Important tag list -->
-                        <ul>
-                            <li>
-                                <p>
-                                    <span>&lt;!DOCTYPE html&gt;</span> ensures that browsers can identify the type of file they are opening.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <span>&lt;html&gt;</span> contains all other tags and elements.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <span>&lt;head&gt;</span> contains data that is invisible to a user without opening the developer tools. 
-                                    Within it, you would use <span>&lt;meta&gt;</span> tags to define specific information about the site 
-                                    like keywords or how the site conforms to a user’s screen.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <span>&lt;body&gt;</span> contains tags that become visual <b>elements</b> when the file is opened through 
-                                    a web browser. This is the part that users see and the part that CSS affects.
-                                </p>
-                            </li>
-                        </ul>
-                        <!-- Picture 2 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/form.png">
-                            <figcaption>Figure 2: Examples of inline (form inputs) and block (labels) elements in use.</figcaption>
-                        </figure>
-                        <!-- Inline and Block -->
-                        <p>
-                            Within the body, the tags form visual elements that behave differently depending on what 
-                            they are. While CSS can change their behaviour, these elements can be classified as being
-                            an <b>inline element</b> or a <b>block element</b> by default. Block elements form a new line when they 
-                            appear, while inline elements remain on the same line as the previous elements unless something 
-                            forces them to appear underneath the previous line like a line break. Examples of block elements 
-                            include paragraphs, headings, and tables. Examples of inline elements include <span>&lt;span&gt;</span> tags, 
-                            anchors, and <span>&lt;br&gt;</span> tags.
-                        </p>
-                    </div>
-                    <!-- HTML Attributes -->
-                    <h3>Attributes</h3>
-                    <div id="attributes">
-                        <p>
-                            Within HTML tags, <b>attributes</b> define specific behaviours. They are always stated in the 
-                            starting tag and often are formatted as <span>attribute="value"</span>. Examples of attributes include 
-                            links to other pages, alternate text for an image, or the language of the page.
-                        </p>
-                    </div>
-                    <h3>CSS Rules, Selectors, and Values</h3>
-                    <!-- CSS Rules -->
-                    <div id="rules">
-                        <!-- Picture 3 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/rule.png">
-                            <figcaption>Figure 3: A CSS rule.</figcaption>
-                        </figure>
-                        <p>
-                            In a CSS file, a <b>rule</b> defines how HTML elements react. These rules consist of <b>selectors</b> and <b>declarations</b> 
-                            of specific behaviours. The selectors are usually the names of the tags being targeted, an example being a 
-                            <span>&lt;div&gt;</span>. A declaration consists of a CSS property and a value, an example being 
-                            <span>display: flex</span>.
-                        </p>
-                    </div>
-                    <!-- Bibliography -->
-                    <h3>Works Cited</h3>
-                    <div id="bibliography">
-                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em> <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em> <a href="https://www.w3schools.com/Css/css_syntax.asp">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> <a href="https://www.w3schools.com/tags/tag_doctype.asp">Link</a></p>
-                    </div>
+                    
+                    <!-- <div class="row-container row">
+
+                        <div class="column column-medium-6 column-small-3">
+                            <div class="column-content">
+                                <div class="content">
+                                    <h4>C#</h4>
+                                    <p>
+                                        C# is a programming language developed by Microsoft using the .NET framework.
+                                        It is similar to the Java programming language. Applications that
+                                        are programmed in C# include many games... (continued) 
+                                    </p>
+                                    <div class="button">
+                                        <a href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
                 </div>
             </div>    
         </main>
