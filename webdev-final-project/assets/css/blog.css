@@ -1,0 +1,79 @@
+@import "base.css";
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+figure {
+    height: 20%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    padding: 15px;
+}
+
+.column-content {
+    position: relative;
+    width: 100%;
+    padding: 24px 28px 29px 28px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 20px 48px 0 rgba(59, 69,  152, 0.14);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+	height: 80%;
+}
+
+.content h4 {
+    font-size: 20px;
+    color: #303336;
+    font-weight: 700;
+}
+
+.content p {
+    margin-top: 9px;
+    font-size: 18px;
+    color: #303336;
+    font-weight: 500;
+}
+
+.button a {
+    display: inline-block;
+    width: 120px;
+    height: 46px;
+    margin-top: 34px;
+    line-height: 46px;
+    background-color: #0099cc;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s background-color ease-in-out;
+}
+
+.button a:hover {
+    background-color: #00749b;
+}
