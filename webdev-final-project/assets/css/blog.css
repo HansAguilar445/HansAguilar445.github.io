@@ -2,11 +2,18 @@
 
 main {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
 }
 
 figure {
-    height: 20%;
+    height: 30%;
     min-width: 100%;
     overflow: hidden;
 }
@@ -14,7 +21,8 @@ figure {
 img {
     width: 100%;
     margin: 0 auto;
-    border-radius: 15px 15px 0 0;
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
 }
 
 .row {
@@ -25,6 +33,7 @@ img {
 .column {
     width: 100%;
     padding: 15px;
+    height: 400px;
 }
 
 .column-content {
@@ -39,7 +48,7 @@ img {
 }
 
 .content {
-	height: 80%;
+	height: 70%;
 }
 
 .content h4 {
@@ -76,4 +85,11 @@ img {
 
 .button a:hover {
     background-color: #00749b;
+}
+
+@media screen and (min-width: 768px) {
+    .column-medium-6 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
 }

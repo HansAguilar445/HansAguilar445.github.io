@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata, favicon and title -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hans Aguilar">
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <title>Secure Socket Layer</title>
+        <!-- Google Font: Oxygen -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <!-- Font Awesome and general CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/article.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <div class="container">
+                <div class="title">
+                    <h1>Hans Aguilar</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-nav">
+                    <p><i class="fas fa-bars" title="Menu"></i></p>
+                </div>
+            </div>
+        </header>
+        <!-- Article -->
+        <!-- The IDs are for if I want to add a table of contents in the future -->
+        <main>
+            <div class="container">
+                <div class="article-page">
+                    <h2>Secure Socket Layer</h2>
+                    <h3>What is SSL?</h3>
+                    <div id="introduction">
+                        <p>
+                            <b>Secure Socket Layer (SSL)</b> is an Internet protocol developed to ensure user privacy, authentication, and the integrity of any data 
+                            transmitted in any communications across the internet. For this purpose, it uses asymmetric encryption, with the encryption keys 
+                            bound to the site by an SSL certificate. Netscape created SSL in 1995, but <b>Transport Layer Security (TLS)</b> replaced it in 1999. 
+                            Websites using either of these protocols have HTTPS in their URL.
+                        </p>
+                    </div>
+                    <h3>What is encryption?</h3>
+                    <div id="encrypt">
+                        <!-- Intro to tags and elements -->
+                        <p>
+                            <b>Encryption</b> is a method of hiding information from anyone besides the intended recipient. To do this, an algorithm scrambles the regular text 
+                            in a way that requires a cryptographic <b>key</b> to unscramble. There are two kinds of encryption: <b>symmetric</b> and <b>asymmetric</b>. 
+                            Symmetric uses a single key to encrypt and decrypt information. Asymmetric uses two separate keys for encrypting and decrypting. SSL and TLS use 
+                            asymmetric encryption. 
+                        </p>
+                    </div>
+                    <h3>What is an SSL certificate and how does it work?</h3>
+                    <div id="cert">
+                        <figure>
+                            <img src="assets/img/cloudflare.svg">
+                            <figcaption>
+                                Figure 1: A comparison between a website secured with an SSL certificate and an insecure site. 
+                                Source: <a href="https://www.cloudflare.com/learning/ssl/what-is-ssl/" target="_blank">Cloudflare</a>
+                            </figcaption>
+                        </figure>
+                        <p>
+                            A website’s security relies on an <b>SSL certificate</b> to ensure that the protocol functions. An SSL certificate is a document binding a pair of 
+                            encryption keys to the page, which allows user devices to decrypt transmitted information upon completing an SSL handshake. When a browser 
+                            accesses a website, the web server sends a copy of the web certificate to the browser. The browser then checks if the certificate is still 
+                            valid. If the certificate is approved, a new key for the session is sent back to the server, encrypted by one of the keys the server already 
+                            sent. The server sends an acknowledgement back using the new key and establishes a session.
+                        </p>
+                    </div>
+                    <h3>How do you know a web page is secure?</h3>
+                    <div id="secure">
+                        <figure>
+                            <img src="assets/img/insecure.png">
+                            <figcaption>Figure 2: Microsoft Edge’s indicator of an insecure site.</figcaption>
+                        </figure>
+                        <p>
+                            Indicators that a page on a website is secure include the aforementioned HTTPS in the URL, a lock symbol on the left side of the address 
+                            bar on a browser, and the lack of a warning. When a web page is insecure, browsers often warn the user about the risk of data theft upon 
+                            entry. The address bar will also have a symbol other than a lock to indicate that the site does not have an SSL certificate. Finally, 
+                            the URL will have HTTP in it instead of HTTPS.
+                        </p>
+                    </div>
+                    <h3>What is an SSL Certificate Authority?</h3>
+                    <div id="auth">
+                        <figure>
+                            <img src="assets/img/sslca.png">
+                            <figcaption>
+                                Figure 3: A diagram of the process of obtaining an SSL Certificate. Source: 
+                                <a href="https://www.ssl.com/faqs/what-is-a-certificate-authority/" target="_blank">SSL.com</a>
+                            </figcaption>
+                        </figure>
+                        <p>
+                            <b>SSL certificate authorities (CAs)</b> are organizations that issue SSL certificates. CAs are responsible for ensuring that websites have authentic 
+                            and up-to-date SSL certificates and provide lists that browsers use to check whether or not a site can be trusted. To obtain an SSL certificate,
+                            applicants need to submit a certificate signing request to a CA to receive one. The request contains information about the site and its creator 
+                            alongside a public key. Should this request be verified, the CA returns an SSL certificate and a private key to the applicant.
+                        </p>
+                    </div>
+                    <!-- Bibliography -->
+                    <h3>Works Cited</h3>
+                    <div id="bibliography">
+                        <p>Cloudflare. (n.d.). <em>What is SSL?</em></p>
+                        <a href="https://www.cloudflare.com/learning/ssl/what-is-ssl/" target="_blank">https://www.cloudflare.com/learning/ssl/what-is-ssl/</a>
+                        <p>Kemmerer, Chris (2015, March 3). <em>The SSL/TLS Handshake: An Overview.</em> SSL.com.</p>
+                        <a href="https://www.ssl.com/article/ssl-tls-handshake-overview/" target="_blank">https://www.ssl.com/article/ssl-tls-handshake-overview/</a>
+                        <p>Cloudflare. (n.d.). <em>What is encryption?</em></p>
+                        <a href="https://www.cloudflare.com/en-ca/learning/ssl/what-is-encryption/" target="_blank">https://www.cloudflare.com/en-ca/learning/ssl/what-is-encryption/</a>
+                        <p>SSL.com. (2021, September 28). <em>What is SSL?</em> </p>
+                        <a href="https://www.ssl.com/faqs/faq-what-is-ssl/" target="_blank">https://www.ssl.com/faqs/faq-what-is-ssl/</a>
+                        <p>DigiCert. (n.d). <em>What is an SSL Certificate?</em> </p>
+                        <a href="https://www.digicert.com/what-is-an-ssl-certificate" target="_blank">https://www.digicert.com/what-is-an-ssl-certificate</a>
+                        <p>SSL.com. (2019, July 23). <em>What is a Certificate Authority (CA)?</em> </p>
+                        <a href="https://www.ssl.com/faqs/what-is-a-certificate-authority/" target="_blank">https://www.ssl.com/faqs/what-is-a-certificate-authority/</a>
+                    </div>
+                </div>
+            </div>    
+        </main>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2021 Hans Aguilar</p>
+            </div>
+        </footer>
+    </body>
+</html>

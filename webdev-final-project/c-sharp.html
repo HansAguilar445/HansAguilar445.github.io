@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Hans Aguilar">
         <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
-        <title>C#</title>
+        <title>The Basics of C#</title>
         <!-- Google Font: Oxygen -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                     <div id="introduction">
                         <!-- Introduction to C# -->
                         <p>
-                            <b>C#</b> is an object-oriented programming language developed by Microsoft using their .NET framework. 
+                            C# is an object-oriented programming language developed by Microsoft using their .NET framework. 
                             It is very similar to the Java programming language, having been initially designed as such to conform 
                             to ECMA’s standards. Applications that are programmed in C# include: 
                         </p>
@@ -86,28 +86,32 @@
                         </p>
                     </div>
                     <h3>Basic rules of programming</h3>
-                    <div id="rules">
+                    <div id="rule">
                         <p>
                             Now that you have a file to write a program in, there are specific conventions that you must remember 
                             when writing code in C#. These are shared with most other programming languages, so keep the following 
                             rules in mind when following this beginner’s guide:
                         </p>
+                        <figure>
+                            <img src="assets/img/classic-blunder.png">
+                            <figcaption>Figure 1: What happens when you forget a semicolon.</figcaption>
+                        </figure>
                         <ul>
                             <li>
                                 <p>
-                                    Always end lines of code with <b>semicolons</b> (<code>;</code>). This tells the computer to go to the next line when 
+                                    Always end lines of code with semicolons (<code>;</code>). This tells the computer to go to the next line when 
                                     you run the code, so forgetting one can cause errors and break the program.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Remember that code is <b>case-sensitive</b>. Not capitalizing one method that you want to use when it needs a capital 
+                                    Remember that code is case-sensitive. Not capitalizing one method that you want to use when it needs a capital 
                                     letter is another mistake that causes errors and breaks the program.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Name your <b>variables</b> something that makes sense for what they do. It helps you figure out what purpose every variable 
+                                    Name your variables something that makes sense for what they do. It helps you figure out what purpose every variable 
                                     fulfills if something goes wrong after running the program.
                                 </p>
                             </li>
@@ -125,13 +129,13 @@
                             </li>
                         </ul>
                     </div>
-                    <h3>Console inputs and outputs</h3>
+                    <h3>Console outputs</h3>
                     <div id="console-outputs">
                         <p>
-                            To start out simply, you will write some sentences in the <b>terminal</b>. It is the traditional starting point for any beginner 
+                            To start out simply, you will write some sentences in the terminal. It is the traditional starting point for any beginner 
                             in a programming language, the classic "Hello World" message. The template for a console application always starts with 
-                            the message, but you might not understand how it all works. To explain, the message is sent to the terminal using either 
-                            the method called <code>WriteLine()</code> or a similar method called <code>Write()</code>, which are methods connected to the Console object 
+                            the message, but you might not understand how it all works. To explain, the message is sent to the terminal using the method called 
+                            <code>WriteLine()</code>, which is a method connected to the Console object 
                             (<code>Console.</code>). You put data in the brackets, like Boolean (true or false) statements, equations, and strings of text, and 
                             it outputs the results. Some examples include:
                         </p>
@@ -152,6 +156,10 @@
                                 </p>
                             </li>
                         </ul>
+                        <figure>
+                            <img src="assets/img/chart.svg">
+                            <figcaption>Figure 2: A chart that displays the code and its output in the console.</figcaption>
+                        </figure>
                         <p>
                             With this in mind, experiment to see what results you get from the terminal as practice. The code from before
                             will work, so copy it and adjust the values to see what happens. Once you feel ready, continue to the next part.
@@ -224,9 +232,9 @@
                         <h4>User input</h4>
                         <div id="user">
                             <p>
-                                Now that you know how to use variables in your code, one more option opens up in the terminal: user input. Using another Console method
-                                called ReadLine(), you can use a string to record what the user wrote in the previous line of the terminal. The following code block
-                                demonstrates ReadLine() in use to record a message:
+                                Now that you know how to use variables in your code, one more option opens up in the terminal: user input. Using another <code>Console</code> method
+                                called <code>ReadLine()</code>, you can use a <code>string</code> to record what the user wrote in the previous line of the terminal. The following 
+                                code block demonstrates <code>ReadLine()</code> in use to record a message:
                             </p>
                             <div class="code">
                                 <code>
@@ -404,8 +412,8 @@
                     <h3>Loops</h3>
                     <div id="loops">
                         <p>
-                            Now that conditional statements are out of the way, the final main concept a C# programmer will need to remember is the concept of <b>looping 
-                            code</b>. Loops allow you to reduce the number of lines you need to write by repeating specific lines that you place inside a loop. There are 
+                            Now that conditional statements are out of the way, the final main concept a C# programmer will need to remember is the concept of looping 
+                            code. Loops allow you to reduce the number of lines you need to write by repeating specific lines that you place inside a loop. There are 
                             three main kinds of loops that you normally use in C#.
                         </p>
                         <h4>While loops</h4>
@@ -481,30 +489,32 @@
                         </div>
                     </div>
                     <h3>Further learning</h3>
-                    <p>
-                        If you intend to learn more about C# and how you can use it, there are several platforms to continue learning from.
-                    </p>
-                    <ul>
-                        <li>
-                            <p>
-                                <a href="https://unity.com/" target="_blank">Unity Engine</a>: The Unity Engine uses C# scripts to control how parts of your
-                                game will work.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="https://dotnet.microsoft.com/learn/csharp" target="_blank">Microsoft’s .NET learning</a> and 
-                                <a href="https://docs.microsoft.com/en-ca/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website" target="_blank">
-                                documentation sites</a>: Microsoft has several sites for developers to learn how to use anything that relies on .NET, C# included.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="https://www.w3schools.com/cs/index.php" target="_blank">W3Schools</a>: W3Schools provides a course for C# that you can 
-                                use for practice.
-                            </p>
-                        </li>
-                    </ul>
+                    <div class="further">
+                        <p>
+                            If you intend to learn more about C# and how you can use it, there are several platforms to continue learning from.
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <a href="https://unity.com/" target="_blank">Unity Engine</a>: The Unity Engine uses C# scripts to control how parts of your
+                                    game will work.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://dotnet.microsoft.com/learn/csharp" target="_blank">Microsoft’s .NET learning</a> and 
+                                    <a href="https://docs.microsoft.com/en-ca/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website" target="_blank">
+                                    documentation sites</a>: Microsoft has several sites for developers to learn how to use anything that relies on .NET, C# included.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <a href="https://www.w3schools.com/cs/index.php" target="_blank">W3Schools</a>: W3Schools provides a course for C# that you can 
+                                    use for practice.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                     <!-- Bibliography -->
                     <h3>Works Cited</h3>
                     <div id="bibliography">

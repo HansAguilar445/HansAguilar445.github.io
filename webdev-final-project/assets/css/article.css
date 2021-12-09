@@ -165,6 +165,16 @@ figcaption {
     height: 73px;
 }
 
+#rule figure {
+    width: 210px;
+    float: right;
+    clear: both;
+}
+
+#rule figure img {
+    width: 100%;
+}
+
 #references figure {
     float: right;
     clear: both;
@@ -196,12 +206,40 @@ figcaption {
     width: 189px;
 }
 
-#switch figure {
+#switch figure, #console-outputs figure, #attack figure, #classes figure, #overdrive figure {
+    width: 100%;
+    padding-top: 5px;
+}
+
+#switch figure img, #console-outputs figure img, #attack figure img, #classes figure img, #overdrive figure img {
     width: 100%;
 }
 
-#switch figure img {
-    width: 100%;
+#cert figure {
+    padding: 5px;
+    width: 200px;
+    float: right;
+    clear: both;
+}
+
+#secure figure {
+    padding: 5px;
+    width: 177px;
+    float: right;
+    clear: both;
+}
+
+#auth figure {
+    width: 324px;
+    float: right;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+}
+
+#auth figure img {
+    width: 312px;
+    height: 223px;
 }
 
 /* - - - - - - - - - - - - */

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Hans Aguilar">
         <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
-        <title>HTML and CSS</title>
+        <title>The Fundamentals of Xenoblade X</title>
         <!-- Google Font: Oxygen -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,64 +40,32 @@
         <main>
             <div class="container">
                 <div class="article-page">
-                    <h2>HTML and CSS</h2>
+                    <h2>The Fundamentals of Xenoblade Chronicles X’s Ground Combat</h2>
                     <div id="introduction">
-                        <!-- Introduction to HTML and CSS -->
-                        <p>
-                            <b>Hypertext Markup Language (HTML)</b> is a markup language that web developers build websites 
-                            with. Consisting of several elements and tags to structure the page, these elements remain 
-                            within either the head or body of the page. <b>Cascading Style Sheets (CSS)</b> are files made in 
-                            the language of the same name that websites used to decorate and change the structure of 
-                            the site.
-                        </p>
-                        <!-- Picture 1 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/html.png">
-                            <figcaption>Figure 1: An HTML document in an editor.</figcaption>
-                        </figure>
                         
-                    </div>
-                    <h3>Tags and Elements</h3>
-                    <div id="tags-and-elements">
-                        <!-- Intro to tags and elements -->
                         <p>
-                            HTML consists of various <b>tags</b> designed to become a structured page when viewed in a browser.
-                            These tags serve different functions depending on where they are placed in a site. The 
-                            following list details specific tags that developers must use for a functional website. 
-                            HTML consists of various tags designed to become a structured page when viewed in a browser. 
+                            <b>Xenoblade Chronicles X (XCX)</b> is a real-time RPG with many complex parts to its gameplay. Set on the fictional planet of Mira, 
+                            you play as a survivor of a spaceship’s crash fighting against aliens who want to wipe out humanity. In the game, you have a 
+                            broad range of options for how you want to play, divided by your choice of weapons, class, and gear. You will need a <b>Nintendo 
+                            Wii U</b> and the included GamePad to play the game, though you can use a Wii U Pro Controller as well.
                         </p>
-                        <!-- Important tag list -->
+                    </div>
+                    <h3>Attacking</h3>
+                    <div id="attack">
+                        
+                        <p>
+                            The basics of the combat system revolve around two types of attacks: auto-attacks and Arts. When you are locked onto an enemy and in 
+                            range, you will perform auto-attacks with the weapon you are using at the time with short breaks in between. These auto-attacks are 
+                            weak, so do not rely on them for damage. When you want to do higher amounts of damage, you use Arts. Arts are special skills that 
+                            serve different roles depending on the colour of their icon. The following list describes the types of Arts available: 
+                        </p>
                         <ul>
-                            <li>
-                                <p>
-                                    <code>&lt;!DOCTYPE html&gt;</code> ensures that browsers can identify the type of file they are opening.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <code>&lt;html&gt;</code> contains all other tags and elements.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <code>&lt;head&gt;</code> contains data that is invisible to a user without opening the developer tools. 
-                                    Within it, you would use <code>&lt;meta&gt;</code> tags to define specific information about the site 
-                                    like keywords or how the site conforms to a user’s screen.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <code>&lt;body&gt;</code> contains tags that become visual <b>elements</b> when the file is opened through 
-                                    a web browser. This is the part that users see and the part that CSS affects.
-                                </p>
-                            </li>
+                            <li><p>Melee: close-ranged attacks, indicated by an orange icon.</p></li>
+                            <li><p>Ranged: long-ranged attacks, indicated by a yellow icon.</p></li>
+                            <li><p>Debuff: enemy-weakening skills, indicated by a purple icon.</p></li>
+                            <li><p>Buff: instant support skills, indicated by a green icon.</p></li>
+                            <li><p>Aura: long-lasting support skills, indicated by a blue icon.</p></li>
                         </ul>
-                        <!-- Picture 2 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/form.png">
-                            <figcaption>Figure 2: Examples of inline (form inputs) and block (labels) elements in use.</figcaption>
-                        </figure>
-                        <!-- Inline and Block -->
                         <p>
                             Within the body, the tags form visual elements that behave differently depending on what 
                             they are. While CSS can change their behaviour, these elements can be classified as being
@@ -107,42 +75,193 @@
                             include paragraphs, headings, and tables. Examples of inline elements include <code>&lt;code&gt;</code> tags, 
                             anchors, and <code>&lt;br&gt;</code> tags.
                         </p>
+                        <figure>
+                            <img src="assets/img/arts.png">
+                            <figcaption>Figure 1: A ranged Art being selected.</figcaption>
+                        </figure>
                     </div>
-                    <!-- HTML Attributes -->
-                    <h3>Attributes</h3>
-                    <div id="attributes">
+                    <h3>Weapons</h3>
+                    <div id="weapons">
                         <p>
-                            Within HTML tags, <b>attributes</b> define specific behaviours. They are always stated in the 
-                            starting tag and often are formatted as <code>attribute="value"</code>. Examples of attributes include 
-                            links to other pages, alternate text for an image, or the language of the page.
+                            When fighting enemies, you have two weapons that you can attack with. One of them is a melee weapon and the other is a ranged weapon. 
+                            In a battle, you can only use one at a time, but you can swap your weapon with the X button or by using an Art. The following table 
+                            describes your options:
+                        </p>
+                        <div class="table">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Default Classes</th>
+                                </tr>
+                                <tr>
+                                    <td><p>Longsword</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Striker, Samurai Gunner, Duelist</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Assault Rifle</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Drifter, Striker, Samurai Gunner, Duelist</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Shield</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Shield Trooper, Bastion Warrior</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Gatling Gun</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Shield Trooper, Bastion Warrior</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Dual Swords</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Commando, Winged Viper, Full Metal Jaguar</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Dual Guns</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Commando, Winged Viper, Full Metal Jaguar</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Javelin</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Partisan Eagle, Astral Crusader</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Sniper Rifle</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Partisan Eagle, Astral Crusader</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Knife</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Drifter, Enforcer, Psycorruptor, Mastermind</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Raygun</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Enforcer, Psycorruptor, Mastermind</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Photon Saber</p></td>
+                                    <td><p>Melee</p></td>
+                                    <td><p>Blast Fencer, Galactic Knight</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Psycho Launchers</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>Blast Fencer, Galactic Knight</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p>Delta Bliss (Multigun)</p></td>
+                                    <td><p>Ranged</p></td>
+                                    <td><p>All</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>
+                            Each weapon comes with unique Arts and, Multigun aside, are locked behind their default classes until you reach their 
+                            maximum level on their best class. For example, you cannot use Dual Guns as a Galactic Knight unless you have reached 
+                            Rank 10 as a Full Metal Jaguar. The Multigun is an exception because it has no specific class that uses it.
                         </p>
                     </div>
-                    <h3>CSS Rules, Selectors, and Values</h3>
-                    <!-- CSS Rules -->
-                    <div id="rules">
-                        <!-- Picture 3 - Not visible at a certain size because I didn't want to keep resizing it -->
-                        <figure>
-                            <img src="assets/img/rule.png">
-                            <figcaption>Figure 3: A CSS rule.</figcaption>
-                        </figure>
+                    <h3>Classes</h3>
+                    <div id="classes">
                         <p>
-                            In a CSS file, a <b>rule</b> defines how HTML elements react. These rules consist of <b>selectors</b> and <b>declarations</b> 
-                            of specific behaviours. The selectors are usually the names of the tags being targeted, an example being a 
-                            <code>&lt;div&gt;</code>. A declaration consists of a CSS property and a value, an example being 
-                            <code>display: flex</code>.
+                            In XCX, your character has many different playstyles defined by their class. Each class has several differences that change 
+                            how you play them, like different stat increases and skill options. There are four tiers of classes, with the second and third 
+                            tiers diverging into different branches. To advance in a branch, you need to raise your Class Rank to Rank 10 by defeating 
+                            enemies or completing side quests. Each class comes with their own unique Arts and skills, with a certain amount of slots to 
+                            use them depending on which class is active at the time. Once you have achieved Rank 10 in a fourth-tier class, you can use their 
+                            weapons regardless of if you remain in that class or not.
+                        </p>
+                        <figure>
+                            <img src="assets/img/Class-Tree.jpg">
+                            <figcaption>Figure 2: The menu where you choose your class.</figcaption>
+                        </figure>
+                    </div>
+                    <h3>Skills</h3>
+                    <div id="skills">
+                        <p>
+                            As you advance in your class, you obtain skills at specific ranks. These skills provide improvements to you in many different ways, 
+                            from stat improvements to conditional buffs to yourself. You can improve them up to five times to boost their effects. You can only 
+                            use as many as you have slots, so you must be careful when choosing which ones you intend to use.
+                        </p>
+                    </div>
+                    <h3>Tension Points</h3>
+                    <div id="tension">
+                        <p>
+                            <b>Tension Points (TP)</b> are to XCX what mana is to most magic-based games. TP is a currency of sorts that you use to perform the 
+                            following actions:
+                        </p>
+                        <ul>
+                            <li><p>Use Arts that are labeled TP Arts. They use up 1000 TP.</p></li>
+                            <li><p>Revive fallen party members. This uses up 3000 TP.</p></li>
+                            <li><p>Activate or replenish Overdrive. This also uses up 3000 TP.</p></li>
+                        </ul>
+                        <p>
+                            To build up TP, there are many different methods you can use. The first method is by auto-attacking. One Assault Rifle that you get in 
+                            a side quest called the Ramjet Rifle is good for this. Another method is by using Arts that give you TP under certain conditions, such 
+                            as Primer or Tornado Blade. By default, your TP caps out at 3000 TP, but you can improve this by using special gear or augments to raise the cap.
+                        </p>
+                    </div>
+                    <h3>Overdrive</h3>
+                    <div id="overdrive">
+                        <p>
+                            After Chapter 5 of the main story, you unlock the Overdrive mechanic. In a fight, you can activate it by pressing A on the button in the centre of your 
+                            Arts bar when you have 3000 TP. Once you do that, it is active for fifteen seconds by default, which you can extend with the following methods:
+                        </p>
+                        <ul>
+                            <li><p>Using the Hellhound skill, which extends the starting duration by up to 10 seconds.</p></li>
+                            <li><p>Using Extend Overdrive augments on your armour, which increases the starting duration by up to 25 seconds each.</p></li>
+                            <li><p>Using auras and buffs during Overdrive.</p></li>
+                            <li><p>Pressing the Overdrive activation button on the Arts bar with 3000 TP before Overdrive ends.</p></li>
+                        </ul>
+                        <p>
+                            During this time, all of your Arts recharge quicker than they would normally and a counter appears in the middle of your screen. This counter 
+                            increases with every damaging Art you use based on how many hits land, capping out at 100 hits. As you raise the counter, your damage and Arts 
+                            recharge speed increase. Additionally, using specific types of Arts in conjunction with each other gives different effects. See the following 
+                            list for the combos and their effects:
+                        </p>
+                        <ul>
+                            <li><p>Auras: Extends the timer by 0.1 seconds multiplied by the counter.</p></li>
+                            <li><p>Buffs: Extends the timer by 0.05 seconds multiplied by the counter.</p></li>
+                            <li><p>Damaging debuffs: Recharges your TP by 10 multiplied by the counter with each hit.</p></li>
+                            <li><p>Buffs to auras: Heals you by 10%.</p></li>
+                            <li><p>Melee to melee: Increases experience gained from the fight by 10%, capping out at 200%.</p></li>
+                            <li><p>Ranged to ranged: Increases class experience gained from the fight by 10%, capping out at 200%.</p></li>
+                            <li><p>Buffs to any damaging Arts: Doubles the number of hits added to the counter.</p></li>
+                            <li><p>Debuffs to any damaging Arts: Boosts damage to specific spots on the enemies’ bodies by 50%.</p></li>
+                            <li><p>Auras to debuffs: Extends the debuff’s length by 25%.</p></li>
+                            <li><p>Ranged to melee or melee to ranged: No increases to the counter and no damage boosts. <b>Do not use this combo, for there are no benefits.</b></p></li>
+                        </ul>
+                        <figure>
+                            <img src="assets/img/overdrive.png">
+                            <figcaption>Figure 3: Overdrive being active in the middle of battle.</figcaption>
+                        </figure>
+                    </div>
+                    <h3>Further Information</h3>
+                    <div class="further">
+                        <p>
+                            If you need more information on the game’s mechanics, check the <a href="https://xenoblade.fandom.com/wiki/Xenoblade_Wiki" target="_blank">
+                            Xenoblade Chronicles Wiki</a>. Another good place to check would be the YouTuber Enel’s <a href="https://youtu.be/7hMMqmlrV3s" target="_blank">
+                            guide on understanding the combat system in XCX</a>. If you need information on other parts of the game, like the locations of specific enemies 
+                            or items, check <a href="https://frontiernav.net/explore/xenoblade-chronicles-x" target="_blank">FrontierNav’s guide on XCX</a>.
                         </p>
                     </div>
                     <!-- Bibliography -->
                     <h3>Works Cited</h3>
                     <div id="bibliography">
-                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em></p>
-                        <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">https://www.w3schools.com/htmL/html_blocks.asp</a>
-                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> </p>
-                        <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">https://www.w3schools.com/htmL/html_attributes.asp</a>
-                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em></p>
-                        <a href="https://www.w3schools.com/Css/css_syntax.asp">https://www.w3schools.com/Css/css_syntax.asp</a>
-                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> </p>
-                        <a href="https://www.w3schools.com/tags/tag_doctype.asp">https://www.w3schools.com/tags/tag_doctype.asp</a>
+                        <p>Xenoblade Wiki. (n.d.). <em>Overdrive (XCX).</em></p>
+                        <a href="https://xenoblade.fandom.com/wiki/Overdrive_(XCX)" target="_blank">https://xenoblade.fandom.com/wiki/Overdrive_(XCX)</a>
+                        <p>Xenoblade Wiki. (n.d.). <em>Skill.</em></p>
+                        <a href="https://xenoblade.fandom.com/wiki/Skill" target="_blank">https://xenoblade.fandom.com/wiki/Skill</a>
+                        <p>Xenoblade Wiki. <em>(n.d.). Class (XCX).</em></p>
+                        <a href="https://xenoblade.fandom.com/wiki/Class_(XCX)" target="_blank">https://xenoblade.fandom.com/wiki/Class_(XCX)</a>
+                        <p>Xenoblade Wiki. (n.d.). <em>Weapons (XCX).</em></p>
+                        <a href="https://xenoblade.fandom.com/wiki/Weapons_(XCX)" target="_blank">https://xenoblade.fandom.com/wiki/Weapons_(XCX)</a>
                     </div>
                 </div>
             </div>    
