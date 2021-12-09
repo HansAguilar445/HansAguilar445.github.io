@@ -86,7 +86,7 @@
                         </p>
                     </div>
                     <h3>Basic rules of programming</h3>
-                    <div id="attributes">
+                    <div id="rules">
                         <p>
                             Now that you have a file to write a program in, there are specific conventions that you must remember 
                             when writing code in C#. These are shared with most other programming languages, so keep the following 
@@ -95,19 +95,19 @@
                         <ul>
                             <li>
                                 <p>
-                                    Always end lines of code with semicolons (<span>;</span>). This tells the computer to go to the next line when 
-                                    you run the code, so forgetting one can break the entire program.
+                                    Always end lines of code with <b>semicolons</b> (<code>;</code>). This tells the computer to go to the next line when 
+                                    you run the code, so forgetting one can cause errors and break the program.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Remember that code is case-sensitive. Not capitalizing one method that you want to use when it needs a capital 
+                                    Remember that code is <b>case-sensitive</b>. Not capitalizing one method that you want to use when it needs a capital 
                                     letter is another mistake that causes errors and breaks the program.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Name your variables something that makes sense for what they do. It helps you figure out what purpose every variable 
+                                    Name your <b>variables</b> something that makes sense for what they do. It helps you figure out what purpose every variable 
                                     fulfills if something goes wrong after running the program.
                                 </p>
                             </li>
@@ -119,7 +119,7 @@
                             <li>
                                 <p>
                                     Put comments in your code. This helps you define what role each chunk of code serves in the overall program. 
-                                    Use <span>//</span> for comments that use one line or <span>/*</span> and <span>*/</span> to define where a 
+                                    Use <code>//</code> for comments that use one line or <code>/*</code> and <code>*/</code> to define where a 
                                     multi-line comment starts and ends.
                                 </p>
                             </li>
@@ -128,32 +128,33 @@
                     <h3>Console outputs</h3>
                     <div id="console-outputs">
                         <p>
-                            To start out simply, you will write some sentences in the terminal. It is the traditional starting point for any beginner 
+                            To start out simply, you will write some sentences in the <b>terminal</b>. It is the traditional starting point for any beginner 
                             in a programming language, the classic "Hello World" message. The template for a console application always starts with 
                             the message, but you might not understand how it all works. To explain, the message is sent to the terminal using either 
-                            the method called <span>WriteLine()</span> or a similar method called <span>Write()</span>, which are methods connected to the Console object 
-                            (<span>Console.</span>). You put data in the brackets, like Boolean (true or false) statements, equations, and strings of text, and 
+                            the method called <code>WriteLine()</code> or a similar method called <code>Write()</code>, which are methods connected to the Console object 
+                            (<code>Console.</code>). You put data in the brackets, like Boolean (true or false) statements, equations, and strings of text, and 
                             it outputs the results. Some examples include:
                         </p>
                         <ul>
                             <li>
                                 <p>
-                                    <span>Console.WriteLine("Hello World");</span> results in the words “Hello World” (quotation marks not included) being outputted from the console.
+                                    <code>Console.WriteLine("Hello World");</code>, which results in the words "Hello World" (quotation marks not included) being outputted from the console.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <span>Console.WriteLine(1 > 0);</span> results in a value of True being outputted to the console.
+                                    <code>Console.WriteLine(1 > 0);</code>, which results in a value of True being outputted to the console.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <span>Console.WriteLine(2 * 6);</span> results in a value of 12 being outputted to the console.
+                                    <code>Console.WriteLine(2 * 6);</code>, which results in a value of 12 being outputted to the console.
                                 </p>
                             </li>
                         </ul>
                         <p>
-                            With this in mind, experiment to see what results you get from the terminal as practice before moving on.
+                            With this in mind, experiment to see what results you get from the terminal as practice. The code from before
+                            will work, so copy it and adjust the values to see what happens. Once you feel ready, continue to the next part.
                         </p>
                     </div>
                     <h3>Variables</h3>
@@ -170,57 +171,237 @@
                                     <th>Example</th>
                                 </tr>
                                 <tr>
-                                    <td><p><span>int</span></p></td>
+                                    <td><p><code>int</code></p></td>
                                     <td><p>11037</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>long</span></p></td>
+                                    <td><p><code>long</code></p></td>
                                     <td><p>-9223372036854775808</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>string</span></p></td>
+                                    <td><p><code>string</code></p></td>
                                     <td><p>"Hello World"</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>float</span></p></td>
+                                    <td><p><code>float</code></p></td>
                                     <td><p>6.02f</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>double</span></p></td>
+                                    <td><p><code>double</code></p></td>
                                     <td><p>3.141592653589793238462643</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>char</span></p></td>
+                                    <td><p><code>char</code></p></td>
                                     <td><p>'b'</p></td>
                                 </tr>
                                 <tr>
-                                    <td><p><span>bool</span></p></td>
+                                    <td><p><code>bool</code></p></td>
                                     <td><p>true</p></td>
                                 </tr>
                             </table>
                         </div>
                         <p>
                             In order to use variables, you need to declare them using the data type’s name and define 
-                            them with a value. These are formatted as <span>datatype variableName = value;</span>. From there, you 
+                            them with a value. These are formatted as <code>datatype variableName = value;</code>. From there, you 
                             can use them as you need by using the name to stand in for the value in the code you are writing. 
                         </p>
                         <h4>Changing declared variables</h4>
+                        <div id="decladed">
+                            <p>
+                                Another important concept to keep in mind with variables is that you can change them later in the program. 
+                                This is used in several ways, like iterating through loops and accepting user input. You can change the 
+                                value of your variables by: 
+                            </p>
+                            <ul>
+                                <li><p>Defining a new value. Example: <code>x = 5;</code></p></li>
+                                <li><p>Using specific operators. Examples: <code>x++;</code>, <code>x--;</code>, <code>x *= 3;</code></p></li>
+                                <li><p>Using type-specific methods to define a new value. Example: <code>str = str.Replace(oldString, newString);</code></p></li>
+                            </ul>
+                            <p>
+                                Be careful not to change the variables in ways that they cannot accept, such as adding a <code>string</code> to an int, as that can cause errors.
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Conditional Statements</h3>
+                    <div id="conditional">
                         <p>
-                            Another important concept to keep in mind with variables is that you can change them later in the program. 
-                            This is used in several ways, like iterating through loops and accepting user input. You can change the 
-                            value of your variables by: 
+                            With variables explained, conditional statements are next for important concepts. These allow you to control what actions the 
+                            computer takes when specific conditions are fulfilled, like when a variable exceeds a certain size. There are two main types 
+                            of conditional statements, the "if-else" type and the "switch-case" type.
                         </p>
-                        <ul>
-                            <li><p>Defining a new value. Example: <span>x = 5;</span></p></li>
-                        </ul>
+                        <h4>If-else statements</h4>
+                        <div id="if">
+                            <p>
+                                The "if-else" statement type is the most common type of conditional statement that you use. You use these when you want to set 
+                                one or more conditions for code to trigger, especially if you have multiple variables you want to use. Take the following steps to use one:
+                            </p>
+                            <ol>
+                                <li><p>Write <code>if</code> and put a set of round brackets next to it. It should look like this: <code>if ()</code></p></li>
+                                <li>
+                                    <p>
+                                        In the round brackets, write the conditions you want for the code to execute. Examples: <code>x == 1</code>, 
+                                        <code>x &gt; 0</code>, <code>x &lt; 2</code>, <code>x == true</code> (do not use this as it is redundant)
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                You can also set more than one if you need to using OR (<code>||</code>) or AND (<code>&amp;&amp;</code>) between conditions.
+                                                Example: <code>(x &gt; str.Length && !active)</code>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>
+                                        After the round brackets, add a set of curly braces. They can be right next to the start of the statement or on the next line. 
+                                        Example: <code>if (x &gt; 0) {}</code>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        In between the curly braces, write the code you want to trigger when the if statement is fulfilled.
+                                    </p>
+                                </li>
+                            </ol>
+                            <p>
+                                In the end, it should look like this: 
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>if (condition)</p>
+                                    <p>{</p>
+                                    <p>//Put your code here</p>
+                                    <p>}</p>
+                                </code>
+                            </div>
+                            <p>
+                                You can also follow up by using <code>else if (condition)</code> and/or <code>else</code> to trigger when your first set of 
+                                conditions are not met and another set is met. The following code block demonstrates this:
+                            </p>
+                            <div class="code">
+                                <code>
+                                    <p>//The second option is picked</p>
+                                    <p>int x = 10;</p>
+                                    <p>if (x &lt; 10)</p>
+                                    <p>{</p>
+                                    <p class="indent-1">Console.WriteLine("x is less than 10.");</p>
+                                    <p>} else if (x == 10)</p>
+                                    <p>{</p>
+                                    <p class="indent-1">Console.WriteLine("x is 10.");</p>
+                                    <p>} else</p>
+                                    <p>{</p>
+                                    <p class="indent-1">Console.WriteLine("x is greater than 10.");</p>
+                                    <p>}</p>
+                                </code>
+                            </div>
+                        </div>
+                        <h4>Switch-case statements</h4>
+                        <div id="switch">
+                            <p>
+                                The "switch-case" statement type is the other main type of conditional statement that you can use in your code. It gives you an easier time 
+                                with setting up multiple conditions in certain situations and it is easier to read. You would use these when you want to open up more 
+                                options for your program when one specific variable is the deciding factor for its path.
+                            </p>
+                            <figure>
+                                <img src="assets/img/switch.png">
+                                <figcaption>Figure 3: A "switch-case" statement in use.</figcaption>
+                            </figure>
+                            <p>
+                                To create a "switch-case" statement like the one above, follow these steps:
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        Write <code>switch()</code> and put the name of the controlling variable in the brackets. Example: <code>switch(str)</code>
+                                    </p>
+                                </li>
+                                <li><p>Put a set of curly braces next to or underneath the start of the statement.</p></li>
+                                <li>
+                                    <p>
+                                        In between the curly braces, write the options. They should be formatted as <code>case value:</code>. Example,:
+                                        <code>case "monday":</code>, <code>case "friday":</code>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                You can also set a default option. To set a default option, place <code>default:</code> at the end of your statement.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>
+                                        After each option, write the code that you want to execute underneath each <code>case</code>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        At the end of the code you want to execute for each case, add <code>break;</code>. This will exit the statement once the code
+                                        under each case has run.
+                                    </p>
+                                </li>
+                            </ol>
+                            <p>The following code block is a "switch-case" statement in use to track days of the week:</p>
+                            <div class="code">
+                                <code>
+                                    <p>//Triggers the Sunday option</p>
+                                    <p>string str = "sunday";</p>
+                                    <p>Console.WriteLine("What day is it?")</p>
+                                    <p>switch(str)</p>
+                                    <p>{</p>
+                                    <p class="indent-1">case "monday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Monday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "tuesday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Tuesday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "wednesday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Wednesday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "thursday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Thursday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "friday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Friday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "saturday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Saturday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">case "sunday":</p>
+                                    <p class="indent-2">Console.WriteLine("Today is Sunday.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p class="indent-1">default:</p>
+                                    <p class="indent-2">Console.WriteLine("Not a day.");</p>
+                                    <p class="indent-2">break;</p>
+                                    <p>}</p>
+                                </code>
+                            </div>
+                            <p>
+                                Keep in mind that unless you want to put "if-else" statements inside the cases, only one variable can be set at a time to control the statement. 
+                                This is not the case with "if-else" statements, where you can set several conditions using multiple variables. Use these when you only have 
+                                one main variable to control how the code functions.
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Loops</h3>
+                    <div id="loops">
+                        <p>
+                            Now that conditional statements are out of the way, the final main concept a C# programmer will need to remember is the concept of <b>looping 
+                            code</b>. Loops allow you to reduce the number of lines you need to write by repeating specific lines that you place inside a loop. There are 
+                            three main kinds of loops that you normally use in C#.
+                        </p>
                     </div>
                     <!-- Bibliography -->
                     <h3>Works Cited</h3>
                     <div id="bibliography">
-                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em> <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em> <a href="https://www.w3schools.com/Css/css_syntax.asp">Link</a></p>
-                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> <a href="https://www.w3schools.com/tags/tag_doctype.asp">Link</a></p>
+                        <p>W3Schools. (n.d.). <em>HTML Block and Inline Elements.</em></p>
+                        <a href="https://www.w3schools.com/htmL/html_blocks.asp" target="_blank">https://www.w3schools.com/htmL/html_blocks.asp</a>
+                        <p>W3Schools. (n.d.). <em>HTML Attributes.</em> </p>
+                        <a href="https://www.w3schools.com/htmL/html_attributes.asp" target="_blank">https://www.w3schools.com/htmL/html_attributes.asp</a>
+                        <p>W3Schools. (n.d.). <em>CSS Syntax.</em></p>
+                        <a href="https://www.w3schools.com/Css/css_syntax.asp">https://www.w3schools.com/Css/css_syntax.asp</a>
+                        <p>W3Schools. (n.d.). <em>HTML doctype declaration.</em> </p>
+                        <a href="https://www.w3schools.com/tags/tag_doctype.asp">https://www.w3schools.com/tags/tag_doctype.asp</a>
                     </div>
                 </div>
             </div>    

@@ -32,6 +32,13 @@ main {
     font-weight: 600;
 }
 
+.article-page h4 {
+    margin: 5px 0;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .article-page p {
     margin: 15px 0;
     font-size: 16px;
@@ -65,6 +72,25 @@ code {
     background-color: #efefef;
 }
 
+.code {
+    background-color: #efefef;
+    padding: 5px;
+}
+
+.code code p {
+    margin: 0;
+    font-family: monospace;
+    color: #cc0000;
+    background-color: #efefef;
+}
+
+.code code p.indent-1 {
+    margin-left: 4ch;
+}
+
+.code code p.indent-2 {
+    margin-left: 8ch;
+}
 
 .table {
     width: 90%;
@@ -97,14 +123,16 @@ tr, td, th {
 /* Pictures                    */
 /* - - - - - - - - - - - - - - */
 
+figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
 #introduction figure {
     float: right;
     clear: both;
 }
 
-figcaption {
-    font-size: 12px;
-}
 
 #introduction figure img {
     width: 245px;
@@ -165,6 +193,14 @@ figcaption {
 #part-creation figure img, #assembly figure img {
     height: 252px; 
     width: 189px;
+}
+
+#switch figure {
+    width: 100%;
+}
+
+#switch figure img {
+    width: 100%;
 }
 
 /* - - - - - - - - - - - - */
