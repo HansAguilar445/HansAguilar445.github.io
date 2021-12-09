@@ -27,6 +27,7 @@ main {
 
 .article-page h3 {
     margin: 10px 0;
+    padding-top: 10px;
     font-size: 20px;
     font-weight: 600;
 }
@@ -38,8 +39,11 @@ main {
     line-height: 1.8;
 }
 
-.article-page div ul li {
+.article-page div ul li, .article-page div ol li {
     margin-left: 30px;
+}
+.article-page div ul li p, .article-page div ol li p {
+    margin: 0;
 }
 
 #bibliography p {
@@ -50,12 +54,17 @@ main {
     color: #0000ff;
     text-decoration: none;
 }
+.bibliography a {
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
 
-span {
+code {
     font-family: monospace;
     color: #cc0000;
     background-color: #efefef;
 }
+
 
 .table {
     width: 90%;
@@ -77,6 +86,10 @@ tr, td, th {
 .article-page .table table td p {
     margin: 0;
     padding: 5px;
+
+}
+#assembly {
+    padding-bottom: 60px;
 
 }
 
@@ -123,6 +136,37 @@ figcaption {
     height: 73px;
 }
 
+#references figure {
+    float: right;
+    clear: both;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#references figure img {
+    height: 304px; 
+    width: 210px;
+}
+
+#part-creation figure, #assembly figure {
+    float: right;
+    clear: both;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#part-creation figure img, #assembly figure img {
+    height: 252px; 
+    width: 189px;
+}
+
 /* - - - - - - - - - - - - */
 /* Media queries           */
 /* - - - - - - - - - - - - */
@@ -142,7 +186,7 @@ figcaption {
     .article-page h2 { font-size: 28px; }
     .article-page h3 { font-size: 24px; }
     .article-page p { font-size: 16px;}
-    figure { display: none;}
+    figure { display: block;}
     .article-page { 
         width: 90%;
         padding: 40px;
