@@ -66,6 +66,38 @@ span {
 /* - - - - - - - - - - - - - - */
 
 img {
+    width: 100%;
+}
+
+figure {
+    padding: 5px;
+    margin: 5px;
+}
+
+#me {
+    float: right;
+    clear: both;
+    width: 231px;
+}
+
+#auckland {
+    float: right;
+    clear: both;
+    width: 320px;
+}
+
+#ptec {
+    float: right;
+    clear: both;
+    width: 114px;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* img {
     width: 100px;
     margin: 0 auto;
     display: block;
@@ -79,7 +111,7 @@ img {
     0% { transform: rotateY(0deg);}
     50% { transform: rotateY(180deg);}
     100% {transform: rotateY(360deg);}
-}
+} */
 
 /* - - - - - - - - - - - - */
 /* Media queries           */
