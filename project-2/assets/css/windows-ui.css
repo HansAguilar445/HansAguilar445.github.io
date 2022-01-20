@@ -157,7 +157,6 @@ input[type="button"].operation:hover, input[type="button"]#pi:hover, input[type=
 	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
-	border-bottom: 3px solid #76b9ed;
 	transition: none;
 }
 
@@ -177,6 +176,7 @@ input[type="button"].operation:hover, input[type="button"]#pi:hover, input[type=
 
 #calc {
 	background-color: #494949;
+	border-bottom: 3px solid #76b9ed;
 }
 
 #calc:hover {
