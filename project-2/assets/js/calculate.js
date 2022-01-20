@@ -23,25 +23,27 @@ numbers.forEach(element => {
             piActive = true;
         }
         else {
-            if (calculated) {
-                clearCalc();
-                calculated = false;
-            }
-            if (output.innerText === '0') {
-                if (element.value.includes('.')) {
-                    output.innerText += element.value;
-                    decimalActive = true
-                } else {
-                    output.innerText = element.value;
+            if (!piActive) {
+                if (calculated) {
+                    clearCalc();
+                    calculated = false;
                 }
-            } else {
-                if (element.value.includes('.')) {
-                    if (!decimalActive) {
+                if (output.innerText === '0') {
+                    if (element.value.includes('.')) {
                         output.innerText += element.value;
-                        decimalActive = true;
+                        decimalActive = true
+                    } else {
+                        output.innerText = element.value;
                     }
-                } else
-                    output.innerText += element.value;
+                } else {
+                    if (element.value.includes('.')) {
+                        if (!decimalActive) {
+                            output.innerText += element.value;
+                            decimalActive = true;
+                        }
+                    } else
+                        output.innerText += element.value;
+                }
             }
         }
     });
@@ -64,6 +66,7 @@ operations.forEach(element => {
             input.innerText = equation;
             operationActive = true;
             decimalActive = false;
+            piActive = false;
         }
         if (element.value.includes('^')) {
             equation += ' ** ';
@@ -88,6 +91,10 @@ function clearCalc() {
     equation = '';
     output.innerText = '0';
     input.innerHTML = '&nbsp;';
+    decimalActive = false;
+    operationActive = false;
+    calculated = false;
+    piActive = false;
 }
 
 function calculate() {
@@ -121,15 +128,20 @@ function calculate() {
         output.innerText = result;
         operationActive = false;
         calculated = true;
+        decimalActive = false;
         equation = '';
     } else {
         equation += ' = ';
         input.innerText = equation;
         equation = '';
         calculated = true;
+        decimalActive = false;
+        operationActive = false;
     }
 }
 
 clearI.addEventListener('click', function() {
     output.innerText = '0';
+    decimalActive = false;
+    piActive = false;
 });
