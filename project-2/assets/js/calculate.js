@@ -109,7 +109,7 @@ function calculate() {
             } case '-': {
                 result = splitEquation[0] - splitEquation[2];
             } case '*': {
-                result = splitEquation[0] * splitEquation[2];
+                result = (splitEquation[0] * splitEquation[2]).toFixed(5);
                 break;
             }
             case '/': {
@@ -125,7 +125,7 @@ function calculate() {
         }
         equation += ' = ';
         input.innerText = equation;
-        output.innerText = result.toFixed(5);
+        output.innerText = result;
         operationActive = false;
         calculated = true;
         decimalActive = false;
