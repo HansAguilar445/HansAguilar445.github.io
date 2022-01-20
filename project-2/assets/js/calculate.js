@@ -125,7 +125,7 @@ function calculate() {
         }
         equation += ' = ';
         input.innerText = equation;
-        output.innerText = result;
+        output.innerText = result.toFixed(5);
         operationActive = false;
         calculated = true;
         decimalActive = false;
