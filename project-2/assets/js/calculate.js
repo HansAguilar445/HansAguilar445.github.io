@@ -24,7 +24,7 @@ numbers.forEach(element => {
         }
         else {
             if (!piActive) {
-                if (calculated) {
+                if (calculated && !operationActive) {
                     clearCalc();
                     calculated = false;
                 }
@@ -99,45 +99,14 @@ function clearCalc() {
 
 function calculate() {
     equation += output.innerText;
-    let splitEquation = equation.split(' ');
-    let result = 0;
-    if (splitEquation.length > 1) {
-        switch(splitEquation[1]) {
-            case '+': {
-                result = parseFloat(splitEquation[0]) + parseFloat(splitEquation[2]);
-                break;
-            } case '-': {
-                result = splitEquation[0] - splitEquation[2];
-            } case '*': {
-                result = (splitEquation[0] * splitEquation[2]).toFixed(5);
-                break;
-            }
-            case '/': {
-                result = splitEquation[0] / splitEquation[2];
-                if (isNaN(result)) {
-                    result = "Math error";
-                }
-                break;
-            } case '**': {
-                result = splitEquation[0] ** splitEquation[2];
-                break;
-            }
-        }
-        equation += ' = ';
-        input.innerText = equation;
-        output.innerText = result;
-        operationActive = false;
-        calculated = true;
-        decimalActive = false;
-        equation = '';
-    } else {
-        equation += ' = ';
-        input.innerText = equation;
-        equation = '';
-        calculated = true;
-        decimalActive = false;
-        operationActive = false;
-    }
+    let result = Function('return ' + equation)();
+    equation += ' = ';
+    input.innerText = equation;
+    equation = '';
+    output.innerText = result.toFixed(5);
+    calculated = true;
+    decimalActive = false;
+    operationActive = false;
 }
 
 clearI.addEventListener('click', function() {
