@@ -7,3 +7,4 @@
  - [Final Web Dev Project](https://hansaguilar445.github.io/webdev-final-project/index.html)
  - [JavaScript Basics Project 1](https://hansaguilar445.github.io/project-1/index.html)
  - [JavaScript Basics Project 2](https://hansaguilar445.github.io/project-2/index.html)
+ - [JavaScript Basics Final Project](https://hansaguilar445.github.io/js-final-project/index.html)
