@@ -7,7 +7,10 @@ const numbers = document.querySelectorAll('.number');
 const operations = document.querySelectorAll('.operation');
 const clear = document.getElementById('clear');
 const equals = document.getElementById('equals');
-const clearI = document.getElementById('clearI')
+const clearI = document.getElementById('clearI');
+const time = document.getElementById('current-time');
+const date = document.getElementById('date');
+const currentTime = new Date();
 let equation = '';
 let operationActive = false;
 let decimalActive = false;
@@ -114,3 +117,17 @@ clearI.addEventListener('click', function() {
     decimalActive = false;
     piActive = false;
 });
+
+setInterval(function() {
+    let hour = currentTime.getHours();
+    let minute = currentTime.getMinutes();
+    let second = currentTime.getSeconds();
+    if (second < 60) currentTime.setHours(hour, minute, second + 1);
+	else currentTime.setHours(hour, minute + 1, 0);
+    if (hour < 12) {
+        if (hour === 0) time.innerText = `12:${minute.toString().padStart(2, '0')} am`;
+        else time.innerText = `${hour}:${minute.toString().padStart(2, '0')} am`;
+    } else if (hour > 12) time.innerText = `${hour-12}:${minute.toString().padStart(2, '0')} pm`;
+    else time.innerText = `12:${minute.toString().padStart(2, '0')} pm`
+    date.innerText = `${currentTime.getFullYear().toString()}-${(currentTime.getMonth() + 1).toString().padStart(2, '0')}-${currentTime.getDate().toString().padStart(2, '0')}`;
+}, 1000);

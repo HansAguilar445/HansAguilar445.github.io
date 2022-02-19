@@ -246,7 +246,7 @@ input[type="button"].operation:hover, input[type="button"]#pi:hover, input[type=
 }
 
 #action div#time {
-	width: 71px;
+	width: 80px;
 	height: 40px;
 	display: flex;
 	flex-direction: column;
