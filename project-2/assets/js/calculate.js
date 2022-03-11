@@ -119,11 +119,10 @@ clearI.addEventListener('click', function() {
 });
 
 setInterval(function() {
-    let hour = currentTime.getHours();
-    let minute = currentTime.getMinutes();
-    let second = currentTime.getSeconds();
-    if (second < 60) currentTime.setHours(hour, minute, second + 1);
-	else currentTime.setHours(hour, minute + 1, 0);
+    let hour = (new Date()).getHours();
+    let minute = (new Date()).getMinutes();
+    let second = (new Date()).getSeconds();
+    currentTime.setHours(hour, minute, second);
     if (hour < 12) {
         if (hour === 0) time.innerText = `12:${minute.toString().padStart(2, '0')} am`;
         else time.innerText = `${hour}:${minute.toString().padStart(2, '0')} am`;

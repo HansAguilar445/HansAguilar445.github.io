@@ -28,12 +28,10 @@ setAlarm.addEventListener('click', function() {
 });
 
 setInterval(() => {
-	let hour = currentTime.getHours();
-	let minute = currentTime.getMinutes();
-	let second = currentTime.getSeconds();
-	if (second < 60) currentTime.setHours(hour, minute, second + 1);
-	else currentTime.setHours(hour, minute + 1, 0);
-
+	let hour = (new Date()).getHours();
+	let minute = (new Date()).getMinutes();
+	let second = (new Date()).getSeconds();
+	currentTime.setHours(hour, minute, second);
 	if (currentTime.getTime() === aTime.getTime()) {
 		setTimeout(function() {
 			alarm.play();
