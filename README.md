@@ -9,3 +9,4 @@
  - [JavaScript Basics Project 2](https://hansaguilar445.github.io/project-2/index.html)
  - [JavaScript Basics Final Project](https://hansaguilar445.github.io/js-final-project/index.html)
  - [Object Oriented JavaScript Project](https://hansaguilar445.github.io/oopjs-project-2/index.html)
+ - [Cookies](https://hansaguilar445.github.io/tpa-assignment-1/index.html)

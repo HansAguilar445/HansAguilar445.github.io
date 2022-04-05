@@ -1,0 +1,193 @@
+@import 'base.css';
+
+main {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/galxrax-rax-oGAf4jsC0Fw-unsplash_1_1440x960.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 0;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+#wrapper div.overlay {
+	z-index: 1;
+}
+
+h1 {
+	font-size: 36px;
+	color: #fff;
+	z-index: 2;
+	text-align: center;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+p {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+dialog {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, .3);
+	opacity: 1;
+	visibility: visible;
+}
+
+dialog:not([open]) {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.cookie {
+	width: 300px;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #fff;
+	z-index: 5;
+	height: 277px;
+}
+
+.hidden {
+	display: none;
+}
+
+.buttons {
+	margin-top: 10px;
+}
+
+.buttons button, .button {
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	font-weight: 500;
+	border: 1px solid #2a93ff;
+	font-size: 14px;
+}
+
+.button {
+	width: 150px;
+}
+
+.buttons button + button {
+	margin-left: 5px;
+}
+
+#accept-all, .button {
+	background-color: #2a93ff;
+	color: #fff;
+}
+
+#accept-all:hover, .button:hover {
+	background-color: #42a1ff;
+}
+
+#manage {
+	background-color: #fff;
+	color: #2a93ff;
+}
+
+#manage:hover {
+	background-color: #fafafa;
+}
+
+.selector {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+
+}
+
+/* Borrowed CSS from W3Schools: https://www.w3schools.com/howto/howto_css_switch.asp */
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 19px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(15px);
+	-ms-transform: translateX(15px);
+	transform: translateX(15px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Cookies | Introduction to Third Party APIs</title>
+	<link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon" />
+	<link rel="stylesheet" href="assets/css/cookies.css" media="all" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+	<script src="assets/js/cookies.js" defer></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<main>
+			<h1>You open the web page. It's a mimic. Roll initiative.</h1>
+		</main>
+		<div class="overlay"></div>
+	</div>
+	<dialog>
+		<div id="initial-modal" class="cookie">
+			<h2>Cookies</h2>
+			<p>
+				We use cookies to improve your experience on our website. By clicking
+				<strong>Accept all</strong>, you agree to the use of cookies for
+				marketing and analytics purposes.
+			</p>
+			<div class="buttons">
+				<button id="accept-all">Accept all</button>
+				<button id="manage">Manage</button>
+			</div>
+		</div>
+		<div id="options" class="cookie hidden">
+			<h2>Manage cookies</h2>
+			<form name="cookie-management">
+				<div class="selector">
+					<h3>Browser</h3>
+					<label class="switch">
+						<input type="checkbox" name="browser">
+						<span class="slider round"></span>
+					  </label>
+				</div>
+				<div class="selector">
+					<h3>Operating system</h3>				
+					<label class="switch">
+						<input type="checkbox" name="os">
+						<span class="slider round"></span>
+					  </label>	
+				</div>
+				<div class="selector">
+					<h3>Screen width</h3>
+					<label class="switch">
+						<input type="checkbox" name="width">
+						<span class="slider round"></span>
+					  </label>
+				</div>
+				<div class="selector">
+					<h3>Screen height</h3>
+					<label class="switch">
+						<input type="checkbox" name="height">
+						<span class="slider round"></span>
+					  </label>
+				</div>
+				<input class="button" type="button" name="save" value="Save preferences">
+			</form>
+		</div>
+	</dialog>
+</body>
+
+</html>
